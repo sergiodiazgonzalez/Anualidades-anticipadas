@@ -101,11 +101,6 @@ ValorActual=43465.7217
 Anualidad=3000
 TasaDeIntereses=0.05
 # Calculamos el número de pagos
-t=# Creamos objetos con los valores de entrada:
-ValorActual=43465.7217
-Anualidad=3000
-TasaDeIntereses=0.05
-# Calculamos el número de pagos
 t=TasaDelPeriodoValorActual(VA=ValorActual,A=Anualidad,r=TasaDeIntereses)
 #Imprimimos el resultado:
 t
