@@ -79,7 +79,7 @@ VA=ValorActual(A=Anualidad,t=NumeroDeAnualidades,r=TasaDeInteres)
 #Imprimimos el resultado:
 VA
 ```
-## Cálculo de anualidad con valor actual
+### Cálculo de anualidad con valor actual
 Para ilustrar el ejemplo, se tiene el siguiente ejercicio: VA=$43,465.7217 t=24 r=5%
 Se realizan los cálculos
 ```{r}
@@ -92,7 +92,7 @@ A=AnualidadValorActual(VA=ValorActual,t=NumeroDeAnualidades,r=TasaDeIntereses)
 #Imprimimos el resultado:
 A
 ```
-## Cálculo de número de Pagos a plazo con valor actual
+### Cálculo de número de Pagos a plazo con valor actual
 Para ilustrar el ejemplo, se tiene el siguiente ejercicio: VA=$43,465.7217 A=$3,000 r=5%
 Se realizan los cálculos
 ```{r}
@@ -104,4 +104,17 @@ TasaDeIntereses=0.05
 t=NumeroDePagosValorActual(VA=ValorActual,A=Anualidad,r=TasaDeIntereses)
 #Imprimimos el resultado:
 t
+```
+### Cálculo de Tasa del periodo con valor actual
+Para ilustrar el ejemplo, se tiene el siguiente ejercicio: VA=$43,465.7217 A=$3,000 t=24
+Se realizan los cálculos
+```{r}
+# Creamos objetos con los valores de entradad:
+ValorActual=43465.7217
+Anualidad=3000
+NumeroDeAnualidades=24
+# Calculamos la tasa del periodo
+r=TasaDelPeriodoValorActual(VA=ValorActual,A=Anualidad,t=NumeroDeAnualidades)
+# Imprimimos el resultado
+r
 ```
