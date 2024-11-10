@@ -62,3 +62,7 @@ r=TasaDelPeriodoValorFuturo(VF=ValorFuturo,A=Anualidad,t=NumeroDeAnualidades)
 #Imprimimos el resultado:
 r
 ```
+## Valor Actual
+$$
+VA = A \cdot \frac{1 - (1 + r)^{-t}}{r} \cdot (1 + r)
+$$
