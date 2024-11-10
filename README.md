@@ -23,3 +23,16 @@ VF=ValorFuturo(A=Anualidad,t=NumeroDeAnualidades,r=TasaDeInteres)
 #Imprimimos el resultado:
 VF
 ```
+### Cálculo de anualidad con valor futuro
+Para ilustrar el ejemplo, se tiene el siguiente ejercicio: VF=$140,181.2965 t=24 r=5%
+Se realizan los cálculos
+```{r}
+# Creamos objetos con los valores de entrada
+ValorFuturo=140181.2965
+NumeroDeAnualidades=24
+TasaDeIntereses=0.05
+# Calculamos la anualidad
+A=AnualidadValorFuturo(VF=ValorFuturo,t=NumeroDeAnualidades,r=TasaDeIntereses)
+#Imprimimos el resultado:
+A
+```
