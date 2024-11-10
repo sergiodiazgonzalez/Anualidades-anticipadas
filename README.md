@@ -92,3 +92,16 @@ A=AnualidadValorActual(VA=ValorActual,t=NumeroDeAnualidades,r=TasaDeIntereses)
 #Imprimimos el resultado:
 A
 ```
+## Cálculo de número de Pagos a plazo con valor actual
+Para ilustrar el ejemplo, se tiene el siguiente ejercicio: VA=$43,465.7217 A=$3,000 r=5%
+Se realizan los cálculos
+```{r}
+# Creamos objetos con los valores de entrada:
+ValorActual=43465.7217
+Anualidad=3000
+TasaDeIntereses=0.05
+# Calculamos el número de pagos
+t=NumeroDePagosValorActual(VA=ValorActual,A=Anualidad,r=TasaDeIntereses)
+#Imprimimos el resultado:
+t
+```
