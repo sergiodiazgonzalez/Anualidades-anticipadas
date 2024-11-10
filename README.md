@@ -79,3 +79,16 @@ VA=ValorActual(A=Anualidad,t=NumeroDeAnualidades,r=TasaDeInteres)
 #Imprimimos el resultado:
 VA
 ```
+## Cálculo de anualidad con valor actual
+Para ilustrar el ejemplo, se tiene el siguiente ejercicio: VA=$43,465.7217 t=24 r=5%
+Se realizan los cálculos
+```{r}
+# Creamos objetos con los valores de entrada:
+ValorActual=43465.7217
+NumeroDeAnualidades=24
+TasaDeIntereses=0.05
+# Calculamos la anualidad
+A=AnualidadValorActual(VA=ValorActual,t=NumeroDeAnualidades,r=TasaDeIntereses)
+#Imprimimos el resultado:
+A
+```
