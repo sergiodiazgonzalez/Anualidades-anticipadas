@@ -37,7 +37,7 @@ A=AnualidadValorFuturo(VF=ValorFuturo,t=NumeroDeAnualidades,r=TasaDeIntereses)
 A
 ```
 ### Cálculo de Número de Pagos a plazo con valor futuro
-Para ilustrar el ejemplo, se tiene el siguiente ejercicio:  VF=$140,181.2965 A=$3,000 r=5%
+Para ilustrar el ejemplo, se tiene el siguiente ejercicio: VF=$140,181.2965 A=$3,000 r=5%
 Se realizan los cálculos
 ```{r}
 # Creamos objetos con los valores de entrada
@@ -48,4 +48,17 @@ TasaDeIntereses=0.05
 t=NumeroDePagosValorFuturo(VF=ValorFuturo,A=Anualidad,r=TasaDeIntereses)
 #Imprimimos el resultado:
 t
+```
+### Cálculo de Tasa del periodo con valor futuro
+Para ilustrar el ejemplo, se tiene el siguiente ejercicio: VF=$140,181.2965 A=$3,000 t=24
+Se realizan los cálculos
+```{r}
+# Creamos objetos con los valores de entrada
+ValorFuturo=140181.2965
+Anualidad=3000
+NumeroDeAnualidades=24
+# Calculamos el número de pago
+r=TasaDelPeriodoValorFuturo(VF=ValorFuturo,A=Anualidad,t=NumeroDeAnualidades)
+#Imprimimos el resultado:
+r
 ```
