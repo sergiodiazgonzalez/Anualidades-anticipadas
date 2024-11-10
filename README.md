@@ -66,3 +66,16 @@ r
 $$
 VA = A \cdot \frac{1 - (1 + r)^{-t}}{r} \cdot (1 + r)
 $$
+### Cálculo de valor actual
+Para ilustrar el ejemplo, se tiene el siguiente ejercicio: A=$3,000 t=24 r=5%
+Se realizan los cálculos
+```{r}
+# Creamos objetos con los valores de entrada
+Anualidad=3000
+NumeroDeAnualidades=24
+TasaDeInteres=0.05
+# Calculamos el valor actual
+VA=ValorActual(A=Anualidad,t=NumeroDeAnualidades,r=TasaDeInteres)
+#Imprimimos el resultado:
+VA
+```
