@@ -8,6 +8,6 @@ source("https://raw.githubusercontent.com/sergiodiazgonzalez/Anualidades-anticip
 A continuación se dan ejemplos del uso de las fórmulas correspondientes
 ## Valor futuro
 $$
-FV = R \cdot \frac{(1 + i)^n - 1}{i} \cdot (1 + i)
+VF = A \cdot \frac{(1 + r)^t - 1}{r} \cdot (1 + r)
 $$
 
